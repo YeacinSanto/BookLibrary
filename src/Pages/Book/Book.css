@@ -1,0 +1,15 @@
+.book-card{
+    border: 1px  tan;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.book-card img {
+  width: 160px;      /* or whatever size you want */
+  height: 240px;
+  object-fit: cover; /* keeps aspect ratio and crops overflow */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
