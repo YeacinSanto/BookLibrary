@@ -3,8 +3,7 @@ import { Link } from 'react-router';
 
 const NavBar = () => {
     const links = <>
-        <Link to={"/"}><li className='m-2'>Home</li></Link>
-        <Link to={"/about"}><li className='m-2'>About</li></Link>
+        
         <Link to={"/readList"}><li className='m-2'>Read List</li></Link>
     </>
     return (
@@ -20,7 +19,7 @@ const NavBar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Books Library</a>
+    <Link to={"/"}><a className="btn btn-ghost text-xl">Books Library</a></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -28,7 +27,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <Link to={"/about"}><a className="btn">About</a></Link>
   </div>
 </div>
     );
